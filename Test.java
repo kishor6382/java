@@ -13,6 +13,8 @@ public class Test {
         
     }
 
+    
+
     static boolean isStrongNumber(int num) {
         int original = num;
         int sum = 0;
