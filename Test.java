@@ -10,6 +10,7 @@ public class Test {
             fact *= i;
         }
         return fact;
+        
     }
 
     static boolean isStrongNumber(int num) {
