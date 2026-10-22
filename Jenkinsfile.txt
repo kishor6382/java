@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage('Checkout Code') {
+            steps {
+                git 'https://github.com'
+            }
+        }
+        stage('Compile Java') {
+            steps {
+                bat 'javac Test.java'
+            }
+        }
+        stage('Run Java Program') {
+            steps {
+                bat 'java Test'
+            }
+        }
+    }
+}
